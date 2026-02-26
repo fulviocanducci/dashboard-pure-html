@@ -1,0 +1,120 @@
+:root {
+  --app-bg: #eef2f7;
+  --surface: #ffffff;
+  --surface-soft: #f8fafc;
+  --line: #dbe3ee;
+  --ink: #1f2a37;
+  --muted: #5e6b7a;
+  --brand: #1f6feb;
+  --brand-soft: #e8f1ff;
+}
+
+body {
+  background: var(--app-bg);
+  color: var(--ink);
+}
+
+.topbar {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+}
+
+.topbar .navbar-brand {
+  color: #0f335f !important;
+  letter-spacing: 0.2px;
+}
+
+.topbar .navbar-toggler {
+  border-color: #c6d4ea;
+  background-color: #fff;
+}
+
+.sidebar {
+  background: #f9fbff;
+  border-right: 1px solid var(--line);
+}
+
+.menu-link {
+  display: block;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: 0.45rem;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  color: var(--muted);
+  text-decoration: none;
+  background: transparent;
+  transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link.active {
+  color: #10407a;
+  background-color: var(--brand-soft);
+  border-color: #bfd3f3;
+  box-shadow: 0 2px 8px rgba(31, 111, 235, 0.14);
+}
+
+.offcanvas .menu-link {
+  color: var(--muted);
+}
+
+.offcanvas .menu-link:hover,
+.offcanvas .menu-link:focus,
+.offcanvas .menu-link.active {
+  color: #10407a;
+  background-color: var(--brand-soft);
+  border-color: #bfd3f3;
+  box-shadow: 0 2px 8px rgba(31, 111, 235, 0.14);
+}
+
+.card {
+  border: 1px solid var(--line) !important;
+  border-radius: 0.65rem;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+}
+
+.card-header {
+  background: var(--surface-soft) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.stat-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%) !important;
+}
+
+.table thead th {
+  color: #364152;
+  background-color: #f5f8fc !important;
+}
+
+.table tbody td {
+  color: #2f3a46;
+}
+
+.btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1b62cf;
+  border-color: #1b62cf;
+}
+
+.offcanvas {
+  background-color: #f9fbff;
+}
+
+.mobile-menu-header {
+  background: linear-gradient(180deg, #fdfefe 0%, #e8f1ff 100%) !important;
+  border-bottom: 1px solid #cfdced !important;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.08);
+}
+
+.mobile-menu-header .offcanvas-title {
+  color: #0f335f;
+}
